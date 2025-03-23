@@ -1,0 +1,46 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-auto-rows: 200px;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.basicLightbox--visible img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 90vh;
+}
