@@ -18,5 +18,5 @@
 @import url('./footer.css');
 
 /* Task style */
-@import url('./gallery.css');
-@import url('./form.css');
+@import url('./snackbar.css');
+@import url('./timer.css');
