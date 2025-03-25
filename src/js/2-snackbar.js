@@ -9,6 +9,8 @@ form.addEventListener('submit', event => {
   const delay = Number(form.elements.delay.value);
   const state = form.elements.state.value;
 
+  form.reset();
+
   createPromise(delay, state)
     .then(delay => {
       iziToast.success({
